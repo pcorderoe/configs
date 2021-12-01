@@ -42,7 +42,9 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
 
 " kite
-"let g:kite_supported_languages = ['*']
+let g:kite_supported_languages = ['*']
+
+
 let g:coc_global_extensions = [
       \ 'coc-tsserver'
       \ ]
@@ -129,4 +131,6 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
     "" has been found.
     "return search_result
 "endfunction
+
+
 

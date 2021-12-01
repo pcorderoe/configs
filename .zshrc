@@ -64,7 +64,11 @@ ZSH_THEME="nanotech"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-syntax-highlighting
+  zsh-autosuggestions
+  history
+  emoji
+  encode64
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -97,8 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias v=openNvim
-alias guc="git reset --soft HEAD~"
 # NVM configuration
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
@@ -138,3 +140,33 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=/usr/bin/java
+
+
+#aliases
+alias v=openNvim
+alias guc="git reset --soft HEAD~"
+alias brew="arch -x86_64 brew"
+alias guc="git reset --soft HEAD~"
+alias gc="git checkout"
+alias gcb="git checkout -b"
+alias gup="git add . && git commit -m '$1' && git push"
+alias gs="git status"
+alias ns="npm start"
+alias ni="npm install"
+alias nci="npm ci"
+alias nr="npm run"
+alias dev="cd $HOME/Projects"
+alias deveasy="cd $HOME/Projects/easycancha/ && nvm use 12.7.0"
+alias envstart="brew services start mysql && brew services start redis && brew services start nginx"
+alias envstop="brew services stop mysql && brew services stop redis && brew services stop nginx"
+alias envrestart="envstop && envstart"
+alias envstatus="brew services list"
+alias db="mysql -uroot -pasdQWE123!!"
+alias jira="open https://jira.com"
+
+
+alias devp="cd $HOME/Personal && ls" 
+alias src="omz reload"
+
+#sources
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

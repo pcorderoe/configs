@@ -47,4 +47,10 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-repeat'
 
+" markdown
+Plug 'ellisonleao/glow.nvim'
+
+" debug
+Plug 'mfussenegger/nvim-dap'
+
 call plug#end()

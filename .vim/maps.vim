@@ -1,5 +1,12 @@
 let mapleader=" "
 
+" markdown
+noremap <leader>pr :Glow<CR>
+
+" debugger
+noremap <Leader>dh :lua require'dap'.toggle_breakpoint()<CR>
+noremap <Leader>dn :lua require'dap'.continue()<CR>
+
 " testing
 nnoremap <Leader>t :TestNearest<CR>
 nnoremap <Leader>T :TestFile<CR>
@@ -237,7 +244,7 @@ function CheckNextParens(c)
   let afterChar = matchstr(getline('.'), '\%' . after . 'c.')
   if (afterChar == a:c)
 
-    return "\<right>"
+  return "\<right>"
   endif
   return a:c
-endfunction
+  endfunction
