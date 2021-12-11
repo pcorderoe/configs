@@ -3,9 +3,22 @@ let mapleader=" "
 " markdown
 noremap <leader>pr :Glow<CR>
 
+"vimspector
+let g:vimspector_enable_mappings = 'HUMAN'
+nmap <Leader>dd :call vimspector#Launch()<CR>
+nmap <Leader>dx :VimspectorReset<CR>
+nmap <Leader>de :VimspectorEval
+nmap <Leader>dw :VimspectorWatch
+nmap <Leader>do :VimspectorShowOutput
+nmap <Leader>di <Plug>VimspectorBalloonEval
+"nmap <Leader>db :call vimspector#ToggleBreakpoint()<CR>
+"nmap <Leader>dn :call vimspector#StepOver()<CR>
+"nmap <Leader>di :call vimspector#StepInto()<CR>
+"nmap <Leader>dc :call vimspector#Continue()<CR>
+
 " debugger
-noremap <Leader>dh :lua require'dap'.toggle_breakpoint()<CR>
-noremap <Leader>dn :lua require'dap'.continue()<CR>
+"noremap <Leader>dh :lua require'dap'.toggle_breakpoint()<CR>
+"noremap <Leader>dn :lua require'dap'.continue()<CR>
 
 " testing
 nnoremap <Leader>t :TestNearest<CR>
