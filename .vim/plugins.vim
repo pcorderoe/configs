@@ -52,6 +52,7 @@ Plug 'tpope/vim-repeat'
 Plug 'ellisonleao/glow.nvim'
 
 " debug
-Plug 'mfussenegger/nvim-dap'
+"Plug 'mfussenegger/nvim-dap'
+Plug 'puremourning/vimspector'
 
 call plug#end()
