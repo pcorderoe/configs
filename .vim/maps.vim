@@ -16,6 +16,8 @@ nnoremap <Leader>TT :TestSuite<CR>
 nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
 
+nnoremap <Leader>a <C-w><C-w><CR>
+
 " quick semi
 nnoremap <Leader>; $a;<Esc>
 

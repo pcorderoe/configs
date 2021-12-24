@@ -1,9 +1,10 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " syntax
 Plug 'sheerun/vim-polyglot'
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-"Plug 'norcalli/nvim-colorizer.lua'
+"Plug 'HerringtonDarkholme/yats.vim'
+"Plug 'yuezk/vim-js'
+"Plug 'flowtype/vim-flow'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
@@ -17,6 +18,7 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'scrooloose/nerdtree'
 
 " typing
+Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
@@ -27,7 +29,6 @@ Plug 'tpope/vim-surround'
 " autocomplete
 Plug 'sirver/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'aca/completion-tabnine', { 'do': './install.sh' }
 
 " test
 Plug 'tyewang/vimux-jest-test'
@@ -47,11 +48,5 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-fugitive'
 
 Plug 'tpope/vim-repeat'
-
-" markdown
-Plug 'ellisonleao/glow.nvim'
-
-" debug
-Plug 'mfussenegger/nvim-dap'
 
 call plug#end()
