@@ -75,19 +75,19 @@ endif
 
 
 set splitright
-function! OpenTerminal(option)
+function! OpenTerminal()
   " move to right most buffer
   execute "normal \<C-l>"
-  #execute "normal \<C-l>"
-  #execute "normal \<C-l>"
-  #execute "normal \<C-l>"
+  execute "normal \<C-l>"
+  execute "normal \<C-l>"
+  execute "normal \<C-l>"
 
   let bufNum = bufnr("%")
   let bufType = getbufvar(bufNum, "&buftype", "not found")
 
   if bufType == "terminal"
     " close existing terminal
-    execute "exit"
+    execute "q"
   else
     " open terminal
     execute "vsp term://zsh"

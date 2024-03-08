@@ -7,10 +7,8 @@ Plug 'sheerun/vim-polyglot'
 "Plug 'flowtype/vim-flow'
 
 " status bar
-"Plug 'maximbaz/lightline-ale'
-"Plug 'itchyny/lightline.vim'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/lightline.vim'
 
 " Themes
 Plug 'morhetz/gruvbox'
@@ -26,7 +24,7 @@ Plug 'tpope/vim-surround'
 
 " tmux
 "Plug 'benmills/vimux'
-Plug 'christoomey/vim-tmux-navigator'
+"Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplete
 Plug 'sirver/ultisnips'
